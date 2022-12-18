@@ -1,7 +1,8 @@
-package com.daltonfercs.movieapp
+package com.daltonfercs.movieapp.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.daltonfercs.movieapp.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
