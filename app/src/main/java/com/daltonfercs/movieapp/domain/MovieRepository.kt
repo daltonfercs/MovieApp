@@ -1,6 +1,7 @@
-package com.daltonfercs.movieapp.repository
+package com.daltonfercs.movieapp.domain
 
 import com.daltonfercs.movieapp.data.model.MovieList
+
 
 interface MovieRepository {
     suspend fun getUpcomingMovies(): MovieList

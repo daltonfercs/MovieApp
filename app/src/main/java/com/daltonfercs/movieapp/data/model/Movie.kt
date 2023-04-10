@@ -1,11 +1,14 @@
 package com.daltonfercs.movieapp.data.model
 
+import android.os.Parcelable
+import kotlinx.android.parcel.Parcelize
 
+@Parcelize
 data class Movie(
-    val id: Int = -1,
     val adult: Boolean = false,
-    val genre_ids: List<Int> = listOf(),
     val backdrop_path: String = "",
+    val genre_ids: List<Int> = listOf(),
+    val id: Int = -1,
     val original_title: String = "",
     val original_language: String = "",
     val overview: String = "",
@@ -16,7 +19,6 @@ data class Movie(
     val video: Boolean = false,
     val vote_average: Double = -1.0,
     val vote_count: Int = -1
-
-)
+): Parcelable
 
 data class MovieList(val results: List<Movie> = listOf())
